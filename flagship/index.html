@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kantan Food | Halal Malaysian cooking pastes (concept)</title>
+  <meta name="description" content="Concept demo of the revamped kantanfood.com: Halal Malaysian cooking pastes and OEM manufacturing from Subang Jaya.">
+  <link rel="icon" type="image/webp" href="../assets/img/brand/logo.webp">
+  <link rel="preload" href="../assets/fonts/big-shoulders-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/fraunces-italic-400-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/img/photos/curry-laksa.webp" as="image">
+  <link rel="stylesheet" href="../assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="home">
+  <script src="../assets/js/icons.js"></script>
+
+  <main id="main">
+    <!-- Hero: the reference's marquee + framed photo + outlined panel, with two clear doors -->
+    <section class="hero">
+      <div class="marquee marquee--hero" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Cooking made simple</span><svg><use href="#bloom-mini"/></svg><span>Masak jadi senang</span><svg><use href="#bloom-mini"/></svg><span class="zh">煮得简单</span><svg><use href="#bloom-mini"/></svg>
+          <span>Cooking made simple</span><svg><use href="#bloom-mini"/></svg><span>Masak jadi senang</span><svg><use href="#bloom-mini"/></svg><span class="zh">煮得简单</span><svg><use href="#bloom-mini"/></svg>
+        </div>
+      </div>
+
+      <div class="wrap hero__grid">
+        <div class="frame hero__media hero-in" data-feature="speed">
+          <img class="frame__img" src="../assets/img/photos/curry-laksa.webp" alt="A bowl of curry laksa with tofu puffs, egg and prawns" fetchpriority="high">
+          <span class="bloom bloom--seal hero__seal"><svg class="bloom__line" aria-hidden="true"><use href="#bloom-line"/></svg><svg class="bloom__fill" aria-hidden="true"><use href="#bloom"/></svg><span class="bloom__text" data-i18n="hero.seal">Laksa ready in 5 minutes</span></span>
+          <img class="hero__pack" src="../assets/img/packs/curry-laksa.webp" alt="Kantan Penang Curry Laksa Paste pack" width="380" height="380">
+        </div>
+
+        <div class="panel hero__copy hero-in" data-feature="two-door">
+          <div class="hero__copy-in">
+            <h1 class="h1" data-i18n="hero.title">Malaysian classics, ready before the rice is.</h1>
+            <p class="lede" data-i18n="hero.sub">Ten Halal cooking pastes made in Subang Jaya. Laksa is ready in 5 minutes and most curries in 15. Just add water and your choice of protein.</p>
+            <div class="hero__doors">
+              <div class="door">
+                <a class="btn" href="shop.html"><span data-i18n="hero.shop">Shop the pastes</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                <span class="btn__note" data-i18n="hero.shopNote">From RM13.90</span>
+              </div>
+              <div class="door">
+                <a class="btn-sketch" href="oem.html"><span data-i18n="hero.oem">Make your own brand</span></a>
+                <span class="btn__note" data-i18n="hero.oemNote">OEM & private label pastes</span>
+              </div>
+            </div>
+          </div>
+          <div class="ticker marquee" aria-hidden="true">
+            <div class="marquee__track">
+              <span data-i18n="tick.1">No preservatives</span><svg><use href="#bloom-mini"/></svg><span data-i18n="tick.2">Halal certified</span><svg><use href="#bloom-mini"/></svg><span data-i18n="tick.3">Gluten-free</span><svg><use href="#bloom-mini"/></svg><span data-i18n="tick.4">No lard</span><svg><use href="#bloom-mini"/></svg><span data-i18n="tick.5">No artificial colouring</span><svg><use href="#bloom-mini"/></svg><span data-i18n="tick.6">Made in Malaysia</span><svg><use href="#bloom-mini"/></svg>
+              <span data-i18n="tick.1">No preservatives</span><svg><use href="#bloom-mini"/></svg><span data-i18n="tick.2">Halal certified</span><svg><use href="#bloom-mini"/></svg><span data-i18n="tick.3">Gluten-free</span><svg><use href="#bloom-mini"/></svg><span data-i18n="tick.4">No lard</span><svg><use href="#bloom-mini"/></svg><span data-i18n="tick.5">No artificial colouring</span><svg><use href="#bloom-mini"/></svg><span data-i18n="tick.6">Made in Malaysia</span><svg><use href="#bloom-mini"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Certificates and stockists">
+      <div class="wrap">
+        <div class="trust__certs">
+          <img src="../assets/img/brand/cert-halal.webp" alt="JAKIM Halal Malaysia" width="150" height="150">
+          <img src="../assets/img/brand/cert-mesti.webp" alt="MeSTI, Ministry of Health Malaysia" width="120" height="63">
+          <img src="../assets/img/brand/cert-haccp.webp" alt="HACCP certified" width="150" height="150">
+          <img src="../assets/img/brand/cert-gmp.webp" alt="GMP certified" width="150" height="150">
+          <img src="../assets/img/brand/buatan-malaysia.webp" alt="Buatan Malaysia" width="150" height="150">
+        </div>
+        <p class="trust__text"><span data-i18n="trust.stores">In every MaxValu and selected AEON stores</span><span data-i18n="trust.abroad">Also in Singapore, Hong Kong, Indonesia and Brunei</span></p>
+      </div>
+    </section>
+
+    <!-- Signature moment: the flavour showcase floods the screen with each pack colour -->
+    <section class="flavours" id="flavours" aria-label="Kantan flavours" data-feature="flavours">
+      <div class="flavours__stage">
+        <div class="wrap flavours__in">
+          <div class="flavours__label"><p class="accent" data-i18n="fl.label">Ten flavours</p><span class="flavours__count"><span class="cur">01</span> / 10</span></div>
+          <div class="flavours__texts"></div>
+          <div class="flavours__visual" aria-hidden="true"></div>
+          <nav class="flavours__index" aria-label="Choose a flavour"></nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps" aria-labelledby="steps-title">
+      <div class="wrap steps__grid">
+        <div class="steps__intro">
+          <p class="accent accent--lg" data-i18n="steps.accent">From pack to plate</p>
+          <h2 class="h2" id="steps-title" data-i18n="steps.title">Three steps. No grinding.</h2>
+          <p class="lede" data-i18n="steps.sub">No pounding chillies, no hunting for galangal. Everything is already in the pack.</p>
+          <svg class="squiggle" viewBox="0 0 360 130" aria-hidden="true">
+            <path class="squiggle__path" d="M6 34 C 52 -6, 98 22, 96 58 C 94 96, 40 98, 48 66 C 58 26, 150 30, 196 70 C 236 104, 296 104, 346 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+            <path class="squiggle__head" d="M326 64 L347 69 L334 86" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <ol class="steps__list" style="list-style:none;margin:0;padding:0" data-feature="steps">
+          <li class="step">
+            <div class="step__media"><div class="frame"><img src="../assets/img/steps/curry-chicken.webp" alt="Kantan meat curry paste frying in a pot" loading="lazy" width="960" height="464"></div>
+              <span class="bloom"><svg class="bloom__line" aria-hidden="true"><use href="#bloom-line"/></svg><svg class="bloom__fill" aria-hidden="true"><use href="#bloom"/></svg><span class="bloom__text">1</span></span></div>
+            <div><h3 class="h3" data-i18n="steps.1">Sauté the paste</h3><p data-i18n="steps.1b">Fry it in the pot for a minute or two until fragrant.</p></div>
+          </li>
+          <li class="step">
+            <div class="step__media"><div class="frame"><img src="../assets/img/steps/satay-chicken.webp" alt="A quarter cup of water poured into satay chicken" loading="lazy" width="960" height="334" style="object-position:12% 50%"></div>
+              <span class="bloom"><svg class="bloom__line" aria-hidden="true"><use href="#bloom-line"/></svg><svg class="bloom__fill" aria-hidden="true"><use href="#bloom"/></svg><span class="bloom__text">2</span></span></div>
+            <div><h3 class="h3" data-i18n="steps.2">Add water</h3><p data-i18n="steps.2b">About 2 cups for laksa, half a cup for most curries.</p></div>
+          </li>
+          <li class="step">
+            <div class="step__media"><div class="frame"><img src="../assets/img/steps/rendang-chicken.webp" alt="Mutton added to rendang paste in a pot" loading="lazy" width="960" height="432" style="object-position:0% 50%"></div>
+              <span class="bloom"><svg class="bloom__line" aria-hidden="true"><use href="#bloom-line"/></svg><svg class="bloom__fill" aria-hidden="true"><use href="#bloom"/></svg><span class="bloom__text">3</span></span></div>
+            <div><h3 class="h3" data-i18n="steps.3">Add your protein</h3><p data-i18n="steps.3b">Chicken, beef, prawns, fish or tofu. Simmer, taste, serve.</p></div>
+          </li>
+        </ol>
+      </div>
+      <div class="wrap steps__seal">
+        <span class="bloom bloom--seal bloom--spin"><svg class="bloom__line" aria-hidden="true"><use href="#bloom-line"/></svg><svg class="bloom__fill" aria-hidden="true"><use href="#bloom"/></svg><span class="bloom__text" data-i18n="steps.seal">No extra seasoning needed</span></span>
+        <div class="stack" style="--gap:12px"><p class="lede">Every recipe comes with a short video from our kitchen. Watch one, then cook along.</p><a class="link-arrow" href="recipes.html">Watch the videos<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Shop or manufacture">
+      <div class="wrap doors">
+        <article class="door-card" data-feature="bundle">
+          <p class="accent accent--md" data-i18n="doors.kitchen">For your kitchen</p>
+          <h2 class="h2" data-i18n="doors.kitchenTitle">Pick any six. Pay RM45.60.</h2>
+          <p class="lede" data-i18n="doors.kitchenBody">Mix laksa, curries and sambal however you like. Free shipping in West Malaysia over RM50.</p>
+          <div class="tray" aria-hidden="true">
+            <span><img src="../assets/img/packs/rendang.webp" alt=""></span><span><img src="../assets/img/packs/curry-laksa.webp" alt=""></span><span><img src="../assets/img/packs/satay.webp" alt=""></span><span><img src="../assets/img/packs/prawn-mee.webp" alt=""></span>
+            <span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span><span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span>
+          </div>
+          <div class="cta-row"><a class="btn btn--dark" href="shop.html#bundle"><span data-i18n="doors.kitchenCta">Build my bundle</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="small muted">You save RM37.80 against single packs</span></div>
+          <img class="door-card__img" src="../assets/img/dishes/curry-laksa.webp" alt="" loading="lazy" width="300" height="300">
+        </article>
+        <article class="door-card door-card--biz" data-feature="oem-door">
+          <p class="accent accent--md" data-i18n="doors.biz">For your business</p>
+          <h2 class="h2" data-i18n="doors.bizTitle">Your recipe. Our Halal kitchen.</h2>
+          <p class="lede" data-i18n="doors.bizBody">Private label, custom recipes and bulk supply for restaurants, caterers and F&B brands, with a low minimum order.</p>
+          <div class="biz-stats">
+            <div><b>100+</b><span>paste recipes ready to produce</span></div>
+            <div><b>1 kg</b><span>retort pouches, 10 kg cartons</span></div>
+            <div><b>16 mo</b><span>shelf life at room temperature</span></div>
+            <div><b>160+</b><span>countries accept JAKIM Halal</span></div>
+          </div>
+          <div class="cta-row"><a class="btn" href="oem.html#quote"><span data-i18n="doors.bizCta">Start an OEM quote</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn-sketch btn-sketch--light" href="wholesale.html">Trade portal</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="case-title">
+      <div class="wrap case" data-feature="case">
+        <div class="case__media">
+          <div class="frame"><img src="../assets/img/kantan/okmaya-shelf.webp" alt="Okmaya Soft Tofu Stew Paste, produced by Kantan" loading="lazy" width="1020" height="1000"></div>
+          <span class="bloom bloom--seal" style="position:absolute;right:-20px;bottom:-24px;--size:130px"><svg class="bloom__line" aria-hidden="true"><use href="#bloom-line"/></svg><svg class="bloom__fill" aria-hidden="true"><use href="#bloom"/></svg><span class="bloom__text">Made by Kantan</span></span>
+        </div>
+        <div class="stack" style="--gap:22px">
+          <p class="accent accent--md" data-i18n="case.accent">Okmaya × Kantan</p>
+          <h2 class="h2" id="case-title" data-i18n="case.title">From an influencer’s recipe to 450+ FamilyMart chillers.</h2>
+          <p class="lede" data-i18n="case.body">Food creator Seonma Shin wanted a Halal soft tofu stew paste. Kantan developed the recipe, produced it in a 120 g retail pack, and it now sits in FamilyMart’s open chillers nationwide.</p>
+          <div class="case__stats">
+            <div><b data-count="450" data-suffix="+">450+</b><span data-i18n="case.s1">FamilyMart stores</span></div>
+            <div><b data-count="120">120</b><span data-i18n="case.s2">g retail pack</span></div>
+            <div><b>100%</b><span data-i18n="case.s3">Halal certified</span></div>
+          </div>
+          <a class="link-arrow" href="oem.html#case"><span data-i18n="case.cta">Read the case study</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-labelledby="rec-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <div><p class="accent accent--md" data-i18n="rec.accent">Cook along</p><h2 class="h2" id="rec-title" data-i18n="rec.title">Ten recipes, ten videos.</h2></div>
+          <a class="btn-sketch" href="recipes.html"><span data-i18n="rec.all">See all recipes</span></a>
+        </div>
+        <div class="recipe-cards" id="home-recipes" data-feature="recipes"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-labelledby="rev-title">
+      <div class="wrap">
+        <div class="sec-head"><div><h2 class="h2" id="rev-title" data-i18n="rev.title">Home cooks say it best.</h2><p class="small muted" data-i18n="rev.note">Reviews from Kantan’s marketplace store.</p></div></div>
+        <div class="reviews" id="home-reviews" data-feature="reviews"></div>
+      </div>
+    </section>
+
+    <section class="section story" id="story" aria-labelledby="story-title">
+      <div class="story__bg" aria-hidden="true"></div>
+      <div class="wrap story__grid" data-feature="story">
+        <div class="stack" style="--gap:22px">
+          <p class="accent accent--lg" data-i18n="story.accent">Our story</p>
+          <h2 class="h2" id="story-title" data-i18n="story.title">Aunty Annie’s forty years in the kitchen, in a pack.</h2>
+          <p class="lede" data-i18n="story.body">Kantan began with family cooking: more than forty years of Aunty Annie’s Asian recipes and the dishes of founder Seth’s mother. Seth and co-founder Carly, who leads R&D, turned them into pastes anyone can cook on a weeknight.</p>
+          <ol class="timeline">
+            <li><b>40+ years</b>Aunty Annie cooks Malay, Nyonya, Chinese and Indian dishes for family and friends.</li>
+            <li><b>2020</b>Kantan Food Asia Sdn Bhd opens its kitchen in Subang Jaya.</li>
+            <li><b>Today</b>Ten retail pastes, 100+ OEM recipes, MaxValu and AEON shelves, and buyers met at trade shows from London to Shanghai.</li>
+          </ol>
+        </div>
+        <div class="stack" style="--gap:28px">
+          <div class="name-box">
+            <span class="bloom"><svg class="bloom__line" aria-hidden="true"><use href="#bloom-line"/></svg><svg class="bloom__fill" aria-hidden="true"><use href="#bloom"/></svg><span class="bloom__text">K</span></span>
+            <div><h3 data-i18n="story.nameTitle">Why “Kantan”?</h3><p data-i18n="story.name">Bunga kantan is the torch ginger flower that perfumes a bowl of assam laksa. In Japanese and Cantonese, kantan (簡単) means simple.</p></div>
+          </div>
+        <div class="people">
+          <figure class="person"><img src="../assets/img/kantan/aunty-annie.webp" alt="Aunty Annie" loading="lazy" width="720" height="1067"><figcaption><b>Aunty Annie</b>40+ years of Asian cooking</figcaption></figure>
+          <figure class="person"><img src="../assets/img/kantan/founder-seth.webp" alt="Seth, founder of Kantan" loading="lazy" width="720" height="1067"><figcaption><b>Seth</b>Founder</figcaption></figure>
+          <figure class="person"><img src="../assets/img/kantan/cofounder-carly.webp" alt="Carly, co-founder and head of R&D" loading="lazy" width="203" height="264"><figcaption><b>Carly</b>Co-founder, head of R&D</figcaption></figure>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="where" aria-labelledby="where-title">
+      <div class="wrap where">
+        <div>
+          <p class="accent accent--md" data-i18n="where.accent">Where to buy</p>
+          <h2 class="h2" id="where-title" data-i18n="where.title">Find Kantan near you.</h2>
+          <div class="where__tabs" role="group" aria-label="Show">
+            <button class="chip" type="button" data-where="stores" aria-pressed="true" data-i18n="where.stores">In stores</button>
+            <button class="chip" type="button" data-where="online" aria-pressed="false" data-i18n="where.online">Online</button>
+            <button class="chip" type="button" data-where="dist" aria-pressed="false" data-i18n="where.dist">Distributors</button>
+          </div>
+          <ul class="where__list" id="where-list"></ul>
+        </div>
+        <div class="map" id="map" data-feature="map" role="region" aria-label="Map of Kantan stockists and distributors"></div>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Recipe club">
+      <div class="wrap">
+        <div class="club" data-feature="club">
+          <div class="club__copy">
+            <p class="accent accent--lg" data-i18n="club.accent">Join the Friday recipe club</p>
+            <p data-i18n="club.body">One new 15-minute recipe every Friday, on WhatsApp or email. Leave any time.</p>
+            <form class="club__form" id="club-form">
+              <label class="sr-only" for="club-in">WhatsApp number or email</label>
+              <input id="club-in" type="text" required data-i18n-ph="club.ph" placeholder="WhatsApp number or email">
+              <button class="btn btn--dark" type="submit"><span data-i18n="club.cta">Join the club</span></button>
+            </form>
+          </div>
+          <div class="club__media"><img src="../assets/img/photos/laksa-drink.webp" alt="A bowl of laksa with an iced drink" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/vendor/gsap.min.js"></script>
+  <script src="../assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="../assets/vendor/lenis.min.js"></script>
+  <script src="../assets/vendor/leaflet/leaflet.js"></script>
+  <script src="../assets/vendor/qrcode.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Proposal page: shares tokens and components with the Flagship demo (flagship/css/site.css). */
+.p-top { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--santan) 92%, transparent); backdrop-filter: blur(10px); border-bottom: 1.5px solid var(--line); }
+.p-top .wrap { height: 72px; display: flex; align-items: center; gap: 18px; }
+.p-top img { width: 104px; }
+.p-top__title { font: 650 15px/1.25 var(--f-sans); margin-right: auto; }
+.p-top__title span { display: block; font-weight: 500; font-size: 13px; color: var(--ink-soft); }
+.p-top nav { display: flex; gap: 22px; }
+.p-top nav a { font: 650 14.5px/1 var(--f-sans); text-decoration: none; }
+.p-top nav a:hover { color: var(--kantan); }
+
+.p-hero { padding-block: clamp(40px, 6vw, 84px) clamp(50px, 6vw, 90px); }
+.p-hero__grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(28px, 4vw, 64px); align-items: center; }
+.p-hero .h1 { font-size: clamp(52px, 6.6vw, 104px); }
+.p-hero__cta { display: flex; flex-wrap: wrap; gap: 16px 22px; align-items: center; }
+.devices { position: relative; padding-bottom: 40px; }
+.browser { border: 1.5px solid var(--pandan); border-radius: 18px; overflow: hidden; background: #fff; box-shadow: 0 40px 70px -40px rgba(23, 58, 41, .55); }
+.browser__bar { display: flex; align-items: center; gap: 7px; height: 34px; padding: 0 12px; background: var(--daun); border-bottom: 1.5px solid var(--pandan); }
+.browser__bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--pandan); opacity: .35; }
+.browser__bar span { margin-left: 10px; font: 600 12px/1 var(--f-sans); color: var(--ink-soft); background: var(--santan); padding: 5px 12px; border-radius: 999px; }
+.browser img { width: 100%; display: block; }
+.phone { position: absolute; right: -10px; bottom: 0; width: 27%; border: 6px solid var(--pandan-2); border-radius: 28px; overflow: hidden; background: #000; box-shadow: 0 30px 50px -24px rgba(0, 0, 0, .6); }
+.phone img { width: 100%; display: block; }
+.devices .bloom { position: absolute; left: -24px; bottom: 10px; --size: 120px; }
+
+.ba { position: relative; border: 1.5px solid var(--pandan); border-radius: var(--r-panel); overflow: hidden; aspect-ratio: 1440 / 900; background: #ddd; user-select: none; }
+.ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.ba__after { clip-path: inset(0 0 0 var(--x, 50%)); }
+.ba__handle { position: absolute; top: 0; bottom: 0; left: var(--x, 50%); width: 3px; background: var(--kantan); transform: translateX(-50%); pointer-events: none; }
+.ba__handle span { position: absolute; top: 50%; left: 50%; translate: -50% -50%; width: 54px; height: 54px; border-radius: 50%; background: var(--kantan); color: #fff; display: grid; place-items: center; box-shadow: 0 10px 24px -10px rgba(0, 0, 0, .5); }
+.ba__handle svg { width: 26px; height: 26px; }
+.ba input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }
+.ba__tag { position: absolute; top: 16px; padding: 8px 14px; border-radius: 999px; font: 800 14px/1 var(--f-sans); pointer-events: none; }
+.ba__tag--before { left: 16px; background: var(--pandan-2); color: var(--santan); }
+.ba__tag--after { right: 16px; background: var(--kantan); color: #fff; }
+
+.audit { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; grid-auto-flow: dense; }
+.a-card { display: grid; gap: 8px; align-content: start; padding: 22px; border-radius: var(--r-card); border: 1.5px solid var(--line); background: var(--santan); }
+.a-card b { font: 900 clamp(40px, 3.8vw, 58px)/1 var(--f-display); color: var(--kantan); }
+.a-card h3 { margin: 0; font: 800 22px/1.05 var(--f-display); text-transform: uppercase; }
+.a-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+.a-card--wide { grid-column: 3 / 5; grid-row: 1 / 3; grid-template-columns: 1fr 210px; gap: 24px; align-items: center; background: var(--pandan); color: var(--santan); }
+.a-card--wide h3 { color: var(--santan); }
+.a-card--wide p { color: color-mix(in srgb, var(--santan) 82%, transparent); }
+.a-card--wide b { color: var(--kunyit); }
+.tier-legend { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.tier-legend span { padding: 5px 10px; border-radius: 999px; font: 800 13px/1 var(--f-sans); }
+.a-card--wide img { border-radius: 14px; border: 1.5px solid var(--line); }
+
+.keeps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.keep { display: flex; gap: 14px; align-items: flex-start; padding: 20px; border-radius: var(--r-card); background: var(--pandan); color: var(--santan); }
+.keep .icon { width: 26px; height: 26px; color: var(--kunyit); flex: none; }
+.keep b { display: block; font: 800 22px/1.05 var(--f-display); text-transform: uppercase; margin-bottom: 4px; }
+.keep span { font-size: 14.5px; color: color-mix(in srgb, var(--santan) 82%, transparent); }
+
+.offers { display: grid; gap: 18px; }
+.offer { display: grid; grid-template-columns: 300px 1fr; gap: clamp(20px, 3vw, 44px); padding: clamp(22px, 3vw, 36px); border: 1.5px solid var(--line); border-radius: var(--r-panel); background: var(--santan); }
+.offer__head { display: grid; gap: 14px; align-content: start; }
+.offer__head .h3 { font-size: clamp(30px, 3vw, 40px); }
+.offer__shot { border-radius: 16px; border: 1.5px solid var(--line); overflow: hidden; }
+.offer__shot img { width: 100%; display: block; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+.offer ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 26px; }
+.offer li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; font-size: 15.5px; line-height: 1.5; }
+.offer li .icon { width: 20px; height: 20px; color: var(--kantan); margin-top: 2px; }
+.offer li b { display: block; }
+.offer li .tier { justify-self: start; margin-top: 4px; padding: 3px 8px; border-radius: 999px; font: 800 11px/1 var(--f-sans); }
+
+.tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: stretch; }
+.tier-card { position: relative; display: grid; gap: 16px; align-content: start; padding: 28px; border-radius: var(--r-panel); border: 1.5px solid var(--line); background: var(--santan); }
+.tier-card--rec { background: var(--pandan); color: var(--santan); transform: translateY(-14px); }
+.tier-card--rec .h2, .tier-card--rec .accent { color: var(--santan); }
+.tier-card .h2 { font-size: clamp(44px, 4.2vw, 62px); }
+.tier-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 15px; }
+.tier-card li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; }
+.tier-card li .icon { width: 18px; height: 18px; margin-top: 3px; color: var(--kantan); }
+.tier-card--rec li .icon { color: var(--kunyit); }
+.tier-card .weeks { font: 800 22px/1 var(--f-display); text-transform: uppercase; padding-top: 14px; border-top: 1px dashed currentColor; }
+.tier-card .bloom { position: absolute; right: -16px; top: -26px; --size: 92px; }
+.care { margin-top: 26px; display: grid; grid-template-columns: auto 1fr auto; gap: 22px; align-items: center; padding: 24px 28px; border-radius: var(--r-panel); border: 1.5px dashed var(--pandan); }
+.care .icon-wrap { width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center; background: var(--daun); border: 1.5px solid var(--pandan); }
+.care .icon-wrap .icon { width: 28px; height: 28px; }
+
+.plan { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; counter-reset: wk; }
+.plan li { position: relative; padding: 22px 18px; border-radius: var(--r-card); border: 1.5px solid var(--line); display: grid; gap: 8px; align-content: start; background: var(--santan); }
+.plan li small { font: 800 16px/1 var(--f-display); color: var(--kantan); letter-spacing: .03em; text-transform: uppercase; }
+.plan li b { font: 800 24px/1.05 var(--f-display); text-transform: uppercase; }
+.plan li span { font-size: 14.5px; color: var(--ink-soft); }
+
+.calc { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-radius: var(--r-panel); overflow: hidden; border: 1.5px solid var(--pandan); }
+.calc__in { padding: clamp(24px, 3vw, 40px); display: grid; gap: 18px; background: var(--santan); }
+.calc__out { padding: clamp(24px, 3vw, 40px); background: var(--kantan); color: #fff; display: grid; gap: 10px; align-content: center; }
+.calc__out b { font: 900 clamp(56px, 6vw, 92px)/1 var(--f-display); }
+.calc__out p { margin: 0; color: rgba(255, 255, 255, .9); }
+.calc .field input { max-width: 260px; }
+
+.next { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(24px, 4vw, 60px); align-items: center; }
+.next ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; counter-reset: n; }
+.next ol li { counter-increment: n; display: grid; grid-template-columns: 48px 1fr; gap: 14px; align-items: center; font-size: 17px; }
+.next ol li::before { content: counter(n); width: 48px; height: 48px; border-radius: 50%; background: var(--kantan); color: #fff; display: grid; place-items: center; font: 800 22px/1 var(--f-display); }
+.contact-card { padding: 30px; border-radius: var(--r-panel); background: var(--pandan); color: var(--santan); display: grid; gap: 16px; }
+.contact-card .h3 { color: var(--santan); }
+
+.p-foot { padding: 30px 0 40px; border-top: 1.5px solid var(--line); font-size: 13.5px; color: var(--ink-soft); }
+.p-foot .wrap { display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; }
+
+@media (max-width: 1000px) {
+  .p-hero__grid, .next, .calc { grid-template-columns: 1fr; }
+  .audit { grid-template-columns: 1fr 1fr; }
+  .a-card--wide { grid-column: 1 / -1; grid-row: auto; }
+  .keeps { grid-template-columns: 1fr 1fr; }
+  .offer { grid-template-columns: 1fr; }
+  .tiers { grid-template-columns: 1fr; }
+  .tier-card--rec { transform: none; }
+  .plan { grid-template-columns: 1fr 1fr; }
+  .p-top nav { display: none; }
+}
+@media (max-width: 640px) {
+  .audit, .keeps, .plan { grid-template-columns: 1fr; }
+  .a-card--wide { grid-column: auto; grid-template-columns: 1fr; }
+  .offer ul { grid-template-columns: 1fr; }
+  .care { grid-template-columns: 1fr; }
+  .p-top__title { display: none; }
+  .p-top .wrap { justify-content: space-between; }
+  .p-top .btn { padding: 0 16px; min-height: 44px; font-size: 14px; }
+  .phone { width: 34%; }
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Trade portal | Kantan Food (concept)</title>
+  <meta name="description" content="Kantan trade portal concept: tiered prices, one-tap reorder and invoices for restaurants and distributors.">
+  <link rel="icon" type="image/webp" href="../assets/img/brand/logo.webp">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="oem">
+  <script src="../assets/js/icons.js"></script>
+  <main id="main">
+    <section class="login" id="login-view" data-feature="portal">
+      <div class="login__art"><div><p class="accent accent--md" style="color:var(--santan)">Kantan trade portal</p><h1 class="h2">Reorder in one tap. Pay on terms.</h1><p style="margin:0;opacity:.9">For restaurants, caterers and distributors buying 1 kg packs every month.</p></div></div>
+      <form class="login__form" id="login-form">
+        <span class="tag">Demo account, sample data</span>
+        <h2 class="h2">Sign in</h2>
+        <div class="field"><label for="l-mail">Email</label><input class="input" id="l-mail" type="email" value="purchasing@seleradapur.my" autocomplete="username"></div>
+        <div class="field"><label for="l-pass">Password</label><input class="input" id="l-pass" type="password" value="demo-password" autocomplete="current-password"></div>
+        <button class="btn" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Sign in</button>
+        <p class="small muted" style="margin:0">No trade account yet? <a href="oem.html#quote" style="font-weight:700;color:var(--pandan)">Apply in two minutes</a></p>
+      </form>
+    </section>
+
+    <section class="portal" id="portal-view" hidden>
+      <nav class="portal__side" aria-label="Trade portal">
+        <a href="#overview" aria-current="page"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg>Overview</a>
+        <a href="#reorder"><svg class="icon" aria-hidden="true"><use href="#i-repeat"/></svg>Order again</a>
+        <a href="#prices"><svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg>Price list</a>
+        <a href="#invoices"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Orders & invoices</a>
+        <a href="#" id="logout"><svg class="icon" aria-hidden="true"><use href="#i-logout"/></svg>Sign out</a>
+      </nav>
+      <div class="portal__main">
+        <div id="overview" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:end">
+          <div><span class="tag">Sample data</span><h1 class="h2" style="margin-top:10px">Selamat pagi, Selera Dapur</h1><p class="muted" style="margin:6px 0 0">Account 10482. Payment terms: 30 days.</p></div>
+          <span class="tag tag--pink" style="font-size:14px;padding:10px 14px"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>Silver tier: 10–49 cartons a month</span>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><b>18</b><span>cartons this month</span></div>
+          <div class="kpi"><b>32</b><span>cartons to Gold tier</span></div>
+          <div class="kpi"><b>RM0</b><span>overdue</span></div>
+          <div class="kpi"><b>Thu</b><span>next delivery slot</span></div>
+        </div>
+
+        <div class="panel" id="reorder" style="padding:24px" data-feature="reorder">
+          <div class="sec-head" style="margin-bottom:16px"><div><h2 class="h3">Order again</h2><p class="small muted" style="margin:0">Your September order. Change quantities, then reorder.</p></div><b class="fl-price" id="ro-total" style="font-size:40px">RM0</b></div>
+          <table class="table" id="ro-table"><thead><tr><th>Paste (1 kg pouch)</th><th>Cartons</th><th>Price / kg</th><th>Line total</th></tr></thead><tbody></tbody></table>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;align-items:center"><button class="btn" type="button" id="ro-go"><svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg>Reorder now</button><span class="small muted">Charged to your 30-day account. Delivered on Thursday.</span></div>
+        </div>
+
+        <div class="panel" id="prices" style="padding:24px" data-feature="tiers">
+          <div class="sec-head" style="margin-bottom:16px"><div><h2 class="h3">Your price list</h2><p class="small muted" style="margin:0">Sample prices for the demo. Kantan sets the real tiers.</p></div><button class="btn btn--sm btn--ghost" type="button" data-dl><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download PDF</button></div>
+          <table class="table" id="tier-table"><thead><tr><th>Paste (1 kg)</th><th>1–9 cartons</th><th>10–49 cartons</th><th>50+ cartons</th></tr></thead><tbody></tbody></table>
+        </div>
+
+        <div class="panel" id="invoices" style="padding:24px">
+          <h2 class="h3" style="margin-bottom:16px">Orders & invoices</h2>
+          <table class="table"><thead><tr><th>Order</th><th>Date</th><th>Cartons</th><th>Status</th><th></th></tr></thead><tbody>
+            <tr><td>TR-26-0931</td><td>18 Sep 2026</td><td>18</td><td><span class="status">Delivered</span></td><td><button class="btn btn--sm btn--ghost" type="button" data-dl>Invoice</button></td></tr>
+            <tr><td>TR-26-0874</td><td>21 Aug 2026</td><td>16</td><td><span class="status">Paid</span></td><td><button class="btn btn--sm btn--ghost" type="button" data-dl>Invoice</button></td></tr>
+            <tr><td>TR-26-0802</td><td>24 Jul 2026</td><td>12</td><td><span class="status">Paid</span></td><td><button class="btn btn--sm btn--ghost" type="button" data-dl>Invoice</button></td></tr>
+          </tbody></table>
+        </div>
+
+        <div class="trade" style="max-width:640px">
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+          <p><b>Your account manager</b>Questions about stock, delivery or a new recipe? Message us on WhatsApp.</p>
+          <button class="btn btn--sm btn--light" type="button" data-chat-open>Message</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/vendor/gsap.min.js"></script>
+  <script src="../assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="../assets/vendor/lenis.min.js"></script>
+  <script src="../assets/vendor/qrcode.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/wholesale.js"></script>
+</body>
+</html>

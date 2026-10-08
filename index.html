@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en" data-root="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kantan website revamp proposal</title>
+  <meta name="description" content="A revamp of kantanfood.com: what we found, what stays, what you get, and a working Flagship demo.">
+  <link rel="icon" type="image/webp" href="assets/img/brand/logo.webp">
+  <link rel="preload" href="assets/fonts/big-shoulders-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="flagship/css/site.css">
+  <link rel="stylesheet" href="assets/css/proposal.css">
+</head>
+<body>
+  <script src="assets/js/icons.js"></script>
+
+  <header class="p-top">
+    <div class="wrap">
+      <img src="assets/img/brand/logo.webp" alt="Kantan" width="418" height="193">
+      <p class="p-top__title">Website revamp proposal<span>Prepared for Kantan Food Asia Sdn Bhd, October 2026</span></p>
+      <nav aria-label="Proposal"><a href="#found">What we found</a><a href="#offer">What you get</a><a href="#packages">Packages</a><a href="#next">Next steps</a></nav>
+      <a class="btn btn--sm" href="flagship/index.html">Open the demo<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="p-hero">
+      <div class="wrap p-hero__grid">
+        <div class="stack" style="--gap:24px">
+          <p class="accent accent--md">kantanfood.com, revamped</p>
+          <h1 class="h1">Same Kantan. A website that tastes like it.</h1>
+          <p class="lede">Your products, packaging and recipes are already premium. This revamp keeps everything that works today, including your domain, orders and Google rankings, and turns the site into a salesperson for home cooks and OEM buyers alike.</p>
+          <div class="p-hero__cta">
+            <a class="btn" href="flagship/index.html">Open the Flagship demo<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn-sketch" href="#packages">See the packages</a>
+          </div>
+          <p class="small muted" style="margin:6px 0 0">Tip: in the demo, switch on “Show what’s new” at the top. Every new feature gets a pink flower that explains it.</p>
+        </div>
+        <div class="devices">
+          <div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span>kantanfood.com</span></div><img src="assets/img/proposal/new-home.webp" alt="The new Kantan homepage on desktop" width="1440" height="900"></div>
+          <div class="phone"><img src="assets/img/proposal/new-home-mobile.webp" alt="The new Kantan homepage on a phone" width="390" height="844"></div>
+          <span class="bloom bloom--seal bloom--spin"><svg class="bloom__line" aria-hidden="true"><use href="#bloom-line"/></svg><svg class="bloom__fill" aria-hidden="true"><use href="#bloom"/></svg><span class="bloom__text">Working demo, not a picture</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="ba-title">
+      <div class="wrap stack" style="--gap:26px">
+        <div class="sec-head" style="margin:0"><div><p class="accent accent--md">Before and after</p><h2 class="h2" id="ba-title">Drag to compare</h2></div><p class="lede" style="max-width:40ch">Today’s homepage on the left, the Flagship concept on the right. Same brand, same products.</p></div>
+        <div class="ba" id="ba">
+          <img src="current-site-screenshots/01-home-hero-desktop.jpg" alt="The current kantanfood.com homepage" width="1440" height="900">
+          <img class="ba__after" src="assets/img/proposal/new-home.webp" alt="The revamped Kantan homepage" width="1440" height="900">
+          <span class="ba__tag ba__tag--before">Today</span><span class="ba__tag ba__tag--after">Revamped</span>
+          <div class="ba__handle"><span><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span></div>
+          <label class="sr-only" for="ba-range">Compare before and after</label><input id="ba-range" type="range" min="0" max="100" value="50">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="found" aria-labelledby="found-title">
+      <div class="wrap">
+        <div class="sec-head"><div><p class="accent accent--md">What we found</p><h2 class="h2" id="found-title">A good business behind a slow site</h2></div>
+          <p class="lede" style="max-width:44ch">Measured on 8 October 2026 with Google Lighthouse and a page-by-page review. Speed scores change a little between runs.</p></div>
+        <div class="audit">
+          <div class="a-card"><b>32–36</b><h3>Mobile speed score</h3><p>Out of 100 on Google’s own test. The main content takes about 5 seconds to appear on a phone.</p></div>
+          <div class="a-card"><b>~5 MB</b><h3>Homepage weight</h3><p>200 files and 70 scripts load before a visitor sees a single paste.</p></div>
+          <div class="a-card a-card--wide"><div class="stack" style="--gap:8px"><b>3</b><h3>Buttons over the phone number</h3><p>On mobile, the cart, WhatsApp and reCAPTCHA buttons cover your phone number and the “Fresh ingredients” line on the very first screen.</p></div><img src="current-site-screenshots/04-home-mobile-viewport.jpg" alt="The current mobile homepage with floating buttons covering text" width="390" height="844" loading="lazy"></div>
+          <div class="a-card"><b>2</b><h3>Broken files on every page</h3><p>Two theme files return errors each time a page loads.</p></div>
+          <div class="a-card"><b>75/176</b><h3>Images without descriptions</h3><p>Google and screen readers can’t tell what these homepage images show.</p></div>
+          <div class="a-card"><b>0</b><h3>Recipes Google can feature</h3><p>Your 10 video recipes are marked up as articles, so they can’t appear as recipe results with photos and cooking times.</p></div>
+          <div class="a-card"><b>4</b><h3>Messages in one slider</h3><p>The homepage rotates shopper offers and OEM pitches, so neither audience gets a clear message in the first five seconds.</p></div>
+          <div class="a-card"><b>6.7</b><h3>WordPress version</h3><p>At least two major versions behind, along with an older page builder and slider plugin.</p></div>
+          <div class="a-card"><b>1</b><h3>Manual payment step</h3><p>Bank-transfer customers have to email a screenshot of their receipt before the order ships.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-labelledby="keep-title">
+      <div class="wrap">
+        <div class="sec-head"><div><p class="accent accent--md">A revamp, not a rebuild</p><h2 class="h2" id="keep-title">What stays exactly as it is</h2></div>
+          <p class="lede" style="max-width:42ch">We replace the slow theme, page builder and slider underneath. Everything your team and your customers rely on carries over.</p></div>
+        <div class="keeps">
+          <div class="keep"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg><div><b>Your domain</b><span>kantanfood.com stays where it is.</span></div></div>
+          <div class="keep"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg><div><b>WordPress admin</b><span>Your team edits in the dashboard it already knows.</span></div></div>
+          <div class="keep"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg><div><b>Products and orders</b><span>WooCommerce products, orders and customers move over untouched.</span></div></div>
+          <div class="keep"><svg class="icon" aria-hidden="true"><use href="#i-card"/></svg><div><b>senangPay</b><span>The same payment account, with a faster checkout.</span></div></div>
+          <div class="keep"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><div><b>60+ articles</b><span>Every URL is kept or redirected, so Google rankings carry over.</span></div></div>
+          <div class="keep"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg><div><b>Ads and analytics</b><span>Google Ads, Analytics and Clarity keep tracking from day one.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="offer" style="background:var(--santan-2);border-block:1.5px solid var(--line)" aria-labelledby="offer-title">
+      <div class="wrap">
+        <div class="sec-head"><div><p class="accent accent--md">What you get</p><h2 class="h2" id="offer-title">Five upgrades, all working in the demo</h2></div>
+          <div><p class="lede" style="max-width:42ch">Each item shows the package that includes it.</p><div class="tier-legend"><span class="tier--Refresh">Refresh</span><span class="tier--Revamp">Revamp</span><span class="tier--Flagship">Flagship</span></div></div></div>
+        <div class="offers" id="offers"></div>
+      </div>
+    </section>
+
+    <section class="section" id="packages" aria-labelledby="pk-title">
+      <div class="wrap">
+        <div class="sec-head"><div><p class="accent accent--md">Packages</p><h2 class="h2" id="pk-title">Pick how far to go</h2></div>
+          <p class="lede" style="max-width:40ch">Each package is a fixed price, confirmed after a 30-minute scoping call. The demo you’ve seen is Flagship.</p></div>
+        <div class="tiers">
+          <article class="tier-card">
+            <p class="accent accent--md">Fix and modernise</p><h3 class="h2">Refresh</h3>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>New homepage, shop and product pages</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Mobile fixes and a much faster site</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Slide-out cart with a free-shipping bar</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Instant DuitNow, FPX and e-wallet confirmation</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Reviews with star ratings</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Every audit issue fixed, WordPress updated and secured</li>
+            </ul>
+            <p class="weeks">3–4 weeks</p>
+          </article>
+          <article class="tier-card tier-card--rec">
+            <span class="bloom bloom--seal"><svg class="bloom__line" aria-hidden="true"><use href="#bloom-line"/></svg><svg class="bloom__fill" aria-hidden="true"><use href="#bloom"/></svg><span class="bloom__text">Our pick</span></span>
+            <p class="accent accent--md">Sell more, everywhere</p><h3 class="h2">Revamp</h3>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Everything in Refresh</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Every page redesigned, with the signature animations</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Tanya Kantan assistant in English, BM and 中文</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>OEM quote builder and catalogue download</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Build-your-own bundles and festive gift boxes</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Recipe hub, where-to-buy map and case studies</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Full English, BM and 中文 versions</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Google Ads conversion tracking</li>
+            </ul>
+            <p class="weeks">6–8 weeks</p>
+          </article>
+          <article class="tier-card">
+            <p class="accent accent--md">The demo you’ve seen</p><h3 class="h2">Flagship</h3>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Everything in Revamp</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Paste-to-plate scroll story</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Product photo and video shoot, including a factory tour</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Tanya Kantan on WhatsApp Business</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Wholesale portal with tiered prices and one-tap reorder</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Monthly pantry box and WhatsApp recipe club</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Trade-show QR kit, meeting booking and CRM</li>
+            </ul>
+            <p class="weeks">10–12 weeks</p>
+          </article>
+        </div>
+        <div class="care">
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+          <div><h3 class="h3" style="margin-bottom:6px">Monthly care plan</h3><p class="muted" style="margin:0">Updates, backups, uptime and speed checks, small content changes, and the running costs of the assistant and WhatsApp messaging. Available with every package, cancel any time.</p></div>
+          <a class="btn btn--dark btn--sm" href="#next">Ask about it</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-labelledby="plan-title">
+      <div class="wrap">
+        <div class="sec-head"><div><p class="accent accent--md">How it runs</p><h2 class="h2" id="plan-title">Revamp in eight weeks</h2></div><p class="lede" style="max-width:40ch">The live site keeps selling while we build on a private copy.</p></div>
+        <ol class="plan">
+          <li><small>Week 1</small><b>Discovery</b><span>Goals, access, and an audit of every page, product and URL.</span></li>
+          <li><small>Weeks 2–3</small><b>Design</b><span>Homepage and key pages for your sign-off, in all three languages.</span></li>
+          <li><small>Weeks 4–7</small><b>Build</b><span>On a staging copy, with products, orders and articles moved over.</span></li>
+          <li><small>Week 8</small><b>Test</b><span>Speed, SEO, payments, the assistant and every redirect checked.</span></li>
+          <li><small>Launch</small><b>Go live</b><span>Switch over in a quiet hour, then 30 days of close support.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-labelledby="roi-title">
+      <div class="wrap">
+        <div class="sec-head"><div><p class="accent accent--md">The numbers</p><h2 class="h2" id="roi-title">One OEM client can pay for it</h2></div><p class="lede" style="max-width:40ch">Put in your own figures. Nothing here is a promise, it’s a way to size the opportunity.</p></div>
+        <div class="calc">
+          <form class="calc__in" id="calc" onsubmit="return false">
+            <div class="field"><label for="c-oem">New OEM clients a year from the website</label><input class="input" id="c-oem" type="number" min="0" value="2"></div>
+            <div class="field"><label for="c-val">First-year value of one OEM client (RM)</label><input class="input" id="c-val" type="number" min="0" step="1000" value="36000"></div>
+            <div class="field"><label for="c-ord">Extra online orders a month</label><input class="input" id="c-ord" type="number" min="0" value="30"></div>
+            <div class="field"><label for="c-aov">Average online order (RM)</label><input class="input" id="c-aov" type="number" min="0" value="55"></div>
+          </form>
+          <div class="calc__out" aria-live="polite"><p>Extra revenue a year</p><b id="c-out">RM91,800</b><p id="c-note">From OEM clients and online orders together.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="next" style="background:var(--santan-2);border-top:1.5px solid var(--line)" aria-labelledby="next-title">
+      <div class="wrap next">
+        <div class="stack" style="--gap:22px">
+          <p class="accent accent--md">Next steps</p>
+          <h2 class="h2" id="next-title">Three steps to start</h2>
+          <ol>
+            <li>A 30-minute call to agree the package and anything to add or remove.</li>
+            <li>A fixed quote and timeline within two working days.</li>
+            <li>Kick-off, with the first designs in your hands in week two.</li>
+          </ol>
+        </div>
+        <!-- EDIT: replace the name, studio, WhatsApp number and email below with your own details -->
+        <div class="contact-card">
+          <p class="accent accent--md" style="color:var(--santan)">Ready when you are</p>
+          <h3 class="h3">Your name, Your studio</h3>
+          <p style="margin:0;opacity:.85">Walk through the demo with us on a call, or try it yourself first.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <a class="btn" href="https://wa.me/60000000000"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp us</a>
+            <a class="btn-sketch btn-sketch--light" href="mailto:hello@yourstudio.com">Email us</a>
+          </div>
+          <a class="link-arrow" href="flagship/index.html" style="color:var(--santan);width:fit-content">Open the Flagship demo<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="p-foot">
+    <div class="wrap"><span>Prepared for Kantan Food Asia Sdn Bhd. The demo is a concept for discussion, not the live website.</span><span>Product photos, recipes and brand assets © Kantan Food Asia Sdn Bhd. Some mood photography from Unsplash.</span></div>
+  </footer>
+
+  <script src="assets/js/proposal.js"></script>
+</body>
+</html>

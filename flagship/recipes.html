@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Recipes | Kantan Food (concept)</title>
+  <meta name="description" content="Ten Malaysian recipes with step-by-step videos, made with Kantan cooking pastes.">
+  <link rel="icon" type="image/webp" href="../assets/img/brand/logo.webp">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="recipes">
+  <script src="../assets/js/icons.js"></script>
+  <main id="main">
+    <header class="page-head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Recipes</span></nav>
+        <p class="accent accent--lg" data-i18n="rec.accent">Cook along</p>
+        <h1 class="h1" data-i18n="rec.title">Ten recipes, ten videos.</h1>
+        <p class="lede">Every recipe uses one Kantan paste and a handful of fresh ingredients. Change the servings and the quantities follow.</p>
+      </div>
+    </header>
+    <section class="section" style="padding-top:0" aria-label="Recipes">
+      <div class="wrap">
+        <div class="toolbar" data-feature="recipe-filters">
+          <div class="chips" role="group" aria-label="Type of dish">
+            <button class="chip" type="button" data-cat="all" aria-pressed="true">Everything</button>
+            <button class="chip" type="button" data-cat="noodles" aria-pressed="false">Laksa & noodles</button>
+            <button class="chip" type="button" data-cat="curries" aria-pressed="false">Curries</button>
+            <button class="chip" type="button" data-cat="sambal" aria-pressed="false">Sambal & stir-fries</button>
+            <button class="chip" type="button" data-quick aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>15 minutes or less</button>
+          </div>
+          <label class="chip" style="min-width:min(100%,260px)"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="sr-only">Search recipes</span><input id="r-search" type="search" placeholder="Search rendang, prawns…" style="border:0;background:none;outline:0;width:100%;font:inherit;font-weight:600"></label>
+        </div>
+        <div class="recipe-cards" id="r-grid"></div>
+        <p class="lede" id="r-empty" hidden style="margin-top:20px">No recipes match that. Try “curry” or clear the filters.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/vendor/gsap.min.js"></script>
+  <script src="../assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="../assets/vendor/lenis.min.js"></script>
+  <script src="../assets/vendor/qrcode.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/recipes.js"></script>
+</body>
+</html>

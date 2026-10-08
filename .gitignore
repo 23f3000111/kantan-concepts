@@ -1,0 +1,3 @@
+# Browser test output stays local; the published site is index.html, flagship/, assets/ and current-site-screenshots/
+.playwright-mcp/
+*.log

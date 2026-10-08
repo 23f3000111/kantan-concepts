@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Shop the pastes | Kantan Food (concept)</title>
+  <meta name="description" content="Ten Halal Malaysian cooking pastes, build-your-own bundles, festive gift boxes and a monthly pantry box.">
+  <link rel="icon" type="image/webp" href="../assets/img/brand/logo.webp">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="shop">
+  <script src="../assets/js/icons.js"></script>
+  <main id="main">
+    <header class="page-head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Shop</span></nav>
+        <p class="accent accent--lg">Ten flavours, one shelf.</p>
+        <h1 class="h1">Shop the pastes</h1>
+        <p class="ship-note"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg>Free shipping on orders over RM50 in West Malaysia</p>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:0" aria-label="All pastes">
+      <div class="wrap">
+        <div class="toolbar">
+          <div class="chips" role="group" aria-label="Filter" data-feature="filters">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">All ten</button>
+            <button class="chip" type="button" data-filter="noodles" aria-pressed="false">Laksa & noodles</button>
+            <button class="chip" type="button" data-filter="curries" aria-pressed="false">Curries</button>
+            <button class="chip" type="button" data-filter="sambal" aria-pressed="false">Sambal & satay</button>
+          </div>
+          <label class="chip" style="gap:10px">Sort
+            <select id="sort" style="border:0;background:none;font:inherit;font-weight:700;color:inherit">
+              <option value="featured">Featured</option><option value="mild">Mildest first</option><option value="hot">Hottest first</option><option value="quick">Quickest first</option>
+            </select>
+          </label>
+        </div>
+        <div class="product-grid" id="grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="bundle" style="background:var(--santan-2);border-block:1.5px solid var(--line)" aria-labelledby="bundle-title">
+      <div class="wrap">
+        <div class="sec-head"><div><p class="accent accent--md">Build your own bundle</p><h2 class="h2" id="bundle-title">Any flavours. Bundle prices.</h2></div>
+          <p class="lede" style="max-width:40ch">Choose six for RM45.60 or eighteen for RM137.80. Mix them however your family eats.</p></div>
+        <div class="builder" data-feature="bundle">
+          <div class="builder__pick" id="pick"></div>
+          <aside class="builder__box" aria-live="polite">
+            <div class="size-switch" role="group" aria-label="Bundle size"><button type="button" data-size="6" aria-pressed="true">6 packs</button><button type="button" data-size="18" aria-pressed="false">18 packs</button></div>
+            <h3 class="h3" id="b-count">0 of 6 picked</h3>
+            <div class="slots" id="slots"></div>
+            <div class="builder__total"><div><span class="small">Bundle price</span><br><b id="b-price">RM45.60</b></div><div style="text-align:right"><s id="b-was">RM83.40</s><br><span class="save" id="b-save">You save RM37.80</span></div></div>
+            <button class="btn" type="button" id="b-add" disabled>Add bundle to cart</button>
+            <button class="btn-sketch btn-sketch--light" type="button" id="b-fill">Fill with a surprise mix</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gifts" aria-labelledby="gifts-title">
+      <div class="wrap">
+        <div class="sec-head"><div><p class="accent accent--md">Festive gift boxes</p><h2 class="h2" id="gifts-title">A box for every open house.</h2></div>
+          <p class="lede" style="max-width:42ch">Every festival gets its own box and landing page, ready before the season starts.</p></div>
+        <div class="feature-cards" data-feature="gifts" id="gift-cards"></div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="pantry" aria-labelledby="pantry-title">
+      <div class="wrap">
+        <div class="club" style="background:var(--pandan)" data-feature="subscribe">
+          <div class="club__copy">
+            <p class="accent accent--md" style="color:var(--santan)">Monthly pantry box</p>
+            <h2 class="h2" id="pantry-title" style="color:var(--santan)">Six pastes a month. 10% off. Skip any time.</h2>
+            <p>Pick your six once, then choose how often. Change flavours, pause or cancel from your account.</p>
+            <div class="where__tabs" role="group" aria-label="How often" style="margin:0">
+              <button class="chip" type="button" data-freq="1" aria-pressed="true" style="color:var(--santan);border-color:var(--santan)">Every month</button>
+              <button class="chip" type="button" data-freq="2" aria-pressed="false" style="color:var(--santan);border-color:var(--santan)">Every 2 months</button>
+            </div>
+            <div class="club__form"><span class="fl-price" style="color:var(--santan)">RM41.04</span><button class="btn" type="button" id="sub-btn">Subscribe and save</button></div>
+          </div>
+          <div class="club__media" style="background:var(--daun);display:grid;place-items:center"><img src="../assets/img/kantan/lineup.webp" alt="Six Kantan pastes" style="position:static;width:88%;height:auto;object-fit:contain"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/vendor/gsap.min.js"></script>
+  <script src="../assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="../assets/vendor/lenis.min.js"></script>
+  <script src="../assets/vendor/qrcode.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
